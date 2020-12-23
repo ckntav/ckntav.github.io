@@ -1,7 +1,7 @@
 ---
 layout: home
-title: Home
-permalink: /home/
+title: About
+permalink: /about/
 ---
 
 ## Christophe Tav
