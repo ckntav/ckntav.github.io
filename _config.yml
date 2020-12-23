@@ -18,25 +18,27 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: ckn@example.com
+title: Christophe Tav
+email: christophe.tav@crchudequebec.ulaval.ca
+location: Québec, Canada
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Online resume
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+avatar: blank-profile-pic.png
 twitter_username: christophe_tav
 github_username:  ckntav
-skin: daylight
+author: Christophe Tav
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
-
 remote_theme: ngzhio/jekyll-theme-hamilton
+toc: true
+skin: daylight
+lang: en
 
 # Exclude from processing.
 # The following items will not be processed, by default.
