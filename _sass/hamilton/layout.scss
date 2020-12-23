@@ -45,6 +45,7 @@
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
+  visibility: hidden;
 
   @include media-query($on-small) {
     float: center;
