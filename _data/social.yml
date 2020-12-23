@@ -1,15 +1,15 @@
 - title: Twitter
-  url: https://twitter.co
+  url: https://twitter.com
   icon: fab fa-twitter
 - title: GitHub
   url: https://github.com
   icon: fab fa-github
 - title: LinkedIn
-  url: https://www.linkedin.co
+  url: https://www.linkedin.com
   icon: fab fa-linkedin
 - title: Scholar
-  url: https://scholar.google.co
+  url: https://scholar.google.com
   icon: fab fa-google
 - title: ResearchGate
-  url: https://www.linkedin.co
+  url: https://www.researchgate.com
   icon: fab fa-researchgate
