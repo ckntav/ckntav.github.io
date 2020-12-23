@@ -36,7 +36,6 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 remote_theme: ngzhio/jekyll-theme-hamilton
-toc: true
 skin: daylight
 lang: en
 
