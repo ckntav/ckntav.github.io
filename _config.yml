@@ -39,6 +39,9 @@ remote_theme: ngzhio/jekyll-theme-hamilton
 skin: daylight
 lang: en
 
+#
+google_anaytics: "G-SE2L3XW0KZ"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
