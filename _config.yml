@@ -40,7 +40,7 @@ skin: daylight
 lang: en
 
 #
-# google_analytics: "G-SE2L3XW0KZ"
+google_analytics: "G-SE2L3XW0KZ"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
