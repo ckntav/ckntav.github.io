@@ -1,15 +1,12 @@
 ---
 layout: post
 title: "Add Linkedin badges"
-categories: none
-tags: [linkedin]
-author:
-  - Christophe Tav
+tags: [html, linkedin]
 ---
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 Add this script
 
-```
+``` html
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 ```
 

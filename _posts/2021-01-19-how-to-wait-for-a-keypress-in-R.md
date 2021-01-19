@@ -1,0 +1,12 @@
+---
+layout: post
+title: "How to wait for a keypress in R?"
+categories:
+tags: [R]
+---
+
+Add this code snippet to your R code
+
+``` r
+readline(prompt="Press [enter] to continue")
+```

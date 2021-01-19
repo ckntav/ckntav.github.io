@@ -1,12 +1,12 @@
-- title: About
-  url: /about/
 - title: VaccinTrackerQC
   url: /vaccintrackerqc/
+- title: Notebook
+  url: /notebook/
+- title: About
+  url: /about/
+# - title: Teaching
+#  url: /teaching/
 # - title: Research
 #   url: /research/
 # - title: Publications
 #   url: /publications/
-- title: Notebook
-  url: /notebook/
-# - title: Teaching
-#  url: /teaching/
