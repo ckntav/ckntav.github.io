@@ -15,9 +15,7 @@ highchart: true
 	{% include map_qc.html %}
 </div>
 
-
-
-
+***
 
 <div>
 	{% include barchart_qc.html %}
