@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Print size directory content?"
+title: "Print size directory content"
 categories:
 tags: [bash]
 ---

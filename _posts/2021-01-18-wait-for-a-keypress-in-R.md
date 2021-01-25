@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Wait for a keypress in R?"
+title: "Wait for a keypress in R"
 categories:
 tags: [R]
 ---
