@@ -20,7 +20,8 @@
 }
 
 #widgetqcglobal div:hover {
-	background: "#FEA803";
+	background: #FEA803;
+	border: solid 1px #FEA803;
 }
 
 #widgetqcglobal span{
