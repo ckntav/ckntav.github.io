@@ -5,6 +5,8 @@ categories:
 tags: [r]
 ---
 
+Start by creating an empty list
+
 ``` r
 df_list <- list()
 ```
