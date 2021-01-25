@@ -8,7 +8,7 @@ widgetqc: true
 ---
 ### Combien de Québecois ont été vaccinés contre la Covid19 ?
 ##### Ce tracker permet de suivre la proportion de Québecois déjà vaccinés contre la Covid19 par région
-##### En date du 24 janvier 2021 (13h)
+##### En date du 25 janvier 2021 (13h)
 
 ### Au Québec
 <div>
