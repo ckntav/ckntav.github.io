@@ -19,6 +19,10 @@
 	vertical-align: top;
 }
 
+#widgetqcglobal div:hover {
+	background: "#FEA803";
+}
+
 #widgetqcglobal span{
 	display: block;
 }
