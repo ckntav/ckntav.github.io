@@ -6,13 +6,16 @@ tags: [r]
 ---
 
 Start by creating an empty list
-
 ``` r
 df_list <- list()
 ```
 
-Fill df_list then
+Fill df_list with dataframes
+``` r
+df_list[["df_id"]] <- df
+```
 
+Merge all dataframes
 ``` r
 df_list %>% reduce(full_join, by = "key_column")
 ```
