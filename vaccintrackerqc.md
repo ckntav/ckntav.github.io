@@ -7,5 +7,5 @@ highchart: false
 widgetqc: false
 ---
 ### Combien de Québecois ont été vaccinés contre la Covid19 ?
-#### Pour suivre l'état de la vaccination contre la Covid19 au Québec: [www.vaccintrackerqc.ca](http://vaccintrackerqc.ca)
+#### Pour suivre l'état de la vaccination contre la Covid19 au Québec: [vaccintrackerqc.ca](http://vaccintrackerqc.ca)
 
