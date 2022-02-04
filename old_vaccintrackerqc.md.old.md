@@ -16,13 +16,13 @@ widgetqc: true
 </div>
 
 ### Par région
-
+<!-- 
 <div>
-	{% include map_qc.html %}
 </div>
+-->
 
 <br>
 
 <div>
-	{% include barchart_qc.html %}
+	<!--{% include barchart_qc.html %}-->
 </div>

@@ -1,0 +1,38 @@
+#widgetqc70 {
+	display: block;
+	text-align: center;
+	overflow: hidden;
+	margin-bottom: 35px;
+}
+
+#widgetqc70 div{
+	display: inline-block;
+    border: solid 1px #0C3D78;
+    border-radius: 10px;
+	margin: 5px;
+	width: 30%;
+	padding: 10px 20px 10px 20px;
+	background: #0C3D78;
+    color: #FFFFFF;
+	font-family: Roboto, "Noto Sans SC", "Noto Sans TC";
+	text-align: left;
+	vertical-align: top;
+}
+
+#widgetqc70 div:hover {
+	background: #FEA803;
+	border: solid 1px #FEA803;
+}
+
+#widgetqc70 span{
+	display: block;
+}
+
+#widgetqc70 .widget_title{
+	font-size: 0.83rem;
+}
+
+#widgetqc70 .widget_value{
+	font-weight: bold;
+	font-size: 1.5rem;
+}
