@@ -2,6 +2,8 @@
 layout: posts
 title: "remove .DS_Store files"
 classes: wide
+categories:
+  - macOS
 tags:
   - macOS
   - bash
@@ -9,6 +11,7 @@ tags:
 ---
 
 If you're a macOS user, you might be familiar with the hidden `.DS_Store` files that macOS creates in every directory to store custom attributes of a folder such as the position of icons. While these files can be useful, they often become an annoyance, especially when sharing directories with non-macOS systems.
+{: .text-justify}
 
 Here's a simple way to remove all `.DS_Store` files recursively from your current directory and its subdirectories using a bash command.
 
