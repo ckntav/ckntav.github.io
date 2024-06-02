@@ -6,5 +6,4 @@ watch command
 how to hide/appear files on a mac in the finder
 !watch command
 
-
-text: I'm a goldfish
+Google analytics to add
