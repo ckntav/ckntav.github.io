@@ -1,0 +1,5 @@
+# TODO
+
+tree --du -dh
+wait for a keypresss
+watch command
