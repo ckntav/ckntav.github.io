@@ -114,7 +114,7 @@ analytics:
 author:
   name             : "Christophe Tav"
   avatar           : "/assets/pics/christophe_tav_profil_square.jpg"
-  bio              : "computational biologist"
+  bio              : "computational biologist" # "in silico biologist"
   location         : "Québec, Canada 🇨🇦"
   email            : # ""
   links:
