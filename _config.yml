@@ -114,9 +114,9 @@ analytics:
 author:
   name             : "Christophe Tav"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "in silico biologist"
+  bio              : "computational biologist"
   location         : "Somewhere"
-  email            :
+  email            : ""
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
