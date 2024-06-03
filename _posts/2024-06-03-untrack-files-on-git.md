@@ -1,5 +1,5 @@
 ---
-title: "Untrack specific files in Git"
+title: "untrack specific files in Git"
 classes: wide
 tags:
   - bash
