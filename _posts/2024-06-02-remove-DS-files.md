@@ -1,5 +1,4 @@
 ---
-layout: posts
 title: "remove .DS_Store files"
 classes: wide
 tags:

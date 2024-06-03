@@ -1,5 +1,4 @@
 ---
-layout: posts
 title: "Untrack specific files in Git"
 classes: wide
 tags:
