@@ -1,7 +1,6 @@
 # TODO
 
-
-
+## Posts
 Plan post in advance
 
 tree --du -dh
@@ -9,8 +8,33 @@ wait for a keypresss
 watch command
 how to hide/appear files on a mac in the finder
 !watch command
-Unfollow
 Liste of alias
+tail -f
+nice boxplot
 
+show my skills
 
+## Global
 Google analytics to add
+Remove Feed button
+Add twitter/X wall on the website
+add link to research gate
+add link to google scholar
+add contact 
+replace follow by "contact"?
+
+## Publications tab
+add papers
+add article that are on the web (tutorial on Rgraph gallery)
+
+## CV tab
+education
+experiences
+
+## projects tab
+add vaccintrackerQC
+add R package GenomicOverlapViz
+coder extension chrome?
+
+##
+write article on boxplot (Rgraph gallery)
