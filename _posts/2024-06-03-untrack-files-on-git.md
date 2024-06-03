@@ -8,14 +8,14 @@ tags:
 
 When working on a project with Git, there are times when you may want to stop tracking certain files that are already being tracked. This might be necessary if those files are generated automatically, contain sensitive information, or simply don’t need to be version-controlled anymore. Here’s a step-by-step guide to help you unfollow files in Git.
 
-## Understanding the .gitignore File
+## Understanding the `.gitignore` file
 
-The .gitignore file is used to tell Git which files (or patterns) it should ignore. However, simply adding files to .gitignore will not stop Git from tracking files that are already being tracked.
+The .gitignore file is used to tell Git which files (or patterns) it should ignore. However, simply adding files to `.gitignore` will not stop Git from tracking files that are already being tracked.
 
 
-## Stopping Git from Tracking a File
+## Stopping Git from tracking a file
 
-To stop tracking a file that is currently being tracked, you need to use the git rm --cached command. This command removes the file from the index, but leaves it in your working directory. Here’s how you can do it:
+To stop tracking a file that is currently being tracked, you need to use the `git rm --cached` command. This command removes the file from the index, but leaves it in your working directory. Here’s how you can do it:
 
 ```
 git rm --cached <file>
@@ -34,7 +34,7 @@ To stop tracking a folder named `logs`, you would run:
 git rm -r --cached logs
 ```
 
-## Update .gitignore
+## Update `.gitignore`
 
 After removing the file from the index, add it to your `.gitignore` file to ensure that Git ignores it in future changes:
 
