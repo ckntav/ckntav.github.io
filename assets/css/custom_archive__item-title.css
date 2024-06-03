@@ -1,0 +1,8 @@
+.archive__item-title a {
+	text-decoration: none;
+    font-size: 0.8em;
+}
+
+.archive__item-title {
+    margin-top: 1em;
+}
