@@ -40,3 +40,7 @@ coder extension chrome?
 
 ##
 write article on boxplot (Rgraph gallery)
+
+## notebook tab
+Add line between categories and list of articles
+Make the article smaller
