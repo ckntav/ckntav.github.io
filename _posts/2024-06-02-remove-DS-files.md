@@ -2,8 +2,6 @@
 layout: posts
 title: "remove .DS_Store files"
 classes: wide
-categories:
-  - macOS
 tags:
   - macOS
   - bash

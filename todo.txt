@@ -1,9 +1,12 @@
 # TODO
 
+unfollow git rm --cached
+
 tree --du -dh
 wait for a keypresss
 watch command
 how to hide/appear files on a mac in the finder
 !watch command
+Unfollow
 
 Google analytics to add
