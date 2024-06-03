@@ -27,6 +27,7 @@ change icon
 ## Publications tab
 add papers
 add article that are on the web (tutorial on Rgraph gallery)
+add "feel free to ask to get a copy"
 
 ## CV tab
 education
