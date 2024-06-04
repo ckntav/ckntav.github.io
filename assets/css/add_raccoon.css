@@ -1,0 +1,17 @@
+#page-title {
+    position: relative;
+    padding-left: 55px; /* Adjust based on the width of your image */
+}
+
+#page-title::before {
+    content: '';
+    display: inline-block;
+    background: url('/assets/pics/racoon_logo_transparent.png') no-repeat center center;
+    background-size: contain; /* Adjust this based on your image */
+    width: 40px; /* Adjust based on the width of your image */
+    height: 40px; /* Adjust based on the height of your image */
+    position: absolute;
+    left: 0;
+    top: 50%; /* Vertically center the image */
+    transform: translateY(-50%);
+}
