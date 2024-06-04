@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Notebook
+title: notebook_tmp
 permalink: /notebook_tmp/
 author_profile: true
 ---

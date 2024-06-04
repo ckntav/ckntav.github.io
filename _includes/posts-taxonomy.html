@@ -19,6 +19,8 @@
   {% endfor %}
 </ul>
 
+
+<h2 id="notes_per_category">Notes per category</h2>
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 {% for i in (1..items_max) reversed %}
   {% for taxonomy in include.taxonomies %}
