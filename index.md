@@ -1,6 +1,6 @@
 ---
 layout: home
-title: home
+title: christophe tav
 author_profile: true
 classes: wide
 show_x: true
