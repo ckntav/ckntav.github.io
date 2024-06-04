@@ -1,9 +1,16 @@
-#page-title {
+#page-title, h3.archive__subtitle {
     position: relative;
     padding-left: 55px; /* Adjust based on the width of your image */
 }
 
-#page-title::before {
+h3.archive__subtitle {
+    /*font-size: 1.25em;*/
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+
+}
+
+#page-title::before, h3.archive__subtitle::before {
     content: '';
     display: inline-block;
     background: url('/assets/pics/racoon_logo_transparent.png') no-repeat center center;
@@ -14,4 +21,9 @@
     left: 0;
     top: 50%; /* Vertically center the image */
     transform: translateY(-50%);
+}
+
+#page-title::before {
+    width: 45px; /* Adjust based on the width of your image */
+    height: 45px; /* Adjust based on the height of your image */
 }
