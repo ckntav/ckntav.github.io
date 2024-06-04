@@ -20,3 +20,11 @@ layout: archive
 </div>
 
 {% include paginator.html %}
+
+{% if page.show_x %}
+<div id=x_timeline>
+<a class="twitter-timeline" data-width="500" data-height="500" data-theme="dark" href="https://twitter.com/christophe_tav?ref_src=twsrc%5Etfw">Tweets by christophe_tav</a>
+<link href="/assets/css/x_timeline.css" rel="stylesheet" type="text/css">
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+{% endif %}
