@@ -1,5 +1,6 @@
 ---
 layout: home
+title: home
 author_profile: true
 classes: wide
 show_x: true
