@@ -1,8 +1,7 @@
-#x_timeline {
-	text-align: center;
-}
-
 .twitter-timeline {
 	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
