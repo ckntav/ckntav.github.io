@@ -3,6 +3,10 @@
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
 
+{% if page.hide_title %}
+<link href="/assets/css/hide_title.css" rel="stylesheet" type="text/css">
+{% endif %}
+
 {% if page.ref_paper %}
 <link href="/assets/css/reference_paper.css" rel="stylesheet" type="text/css">
 {% endif %}

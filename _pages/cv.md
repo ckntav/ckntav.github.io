@@ -2,6 +2,7 @@
 layout: single
 title: cv
 permalink: /cv/
+classes: wide
 author_profile: true
 ---
 

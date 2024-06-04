@@ -4,12 +4,13 @@ title: christophe tav
 author_profile: true
 classes: wide
 show_x: true
+hide_title: true
 ---
 
 This website is currently under development.
 You might run into some bugs and incomplete features.
 Reporting any bugs you find is appreciated! Let me know [here](mailto:christophe.tav@gmail.com)
-{: .notice--warning}
+{: .notice--info}
 
 <!--
 Welcome! As a computational biologist, I constantly dive into complex datasets and develop scripts to uncover biological insights. This blog serves as my knowledge repository, where I document and share the techniques and functions I frequently use but often forget, saving me from endless googling.
