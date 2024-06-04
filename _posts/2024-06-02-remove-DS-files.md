@@ -1,5 +1,5 @@
 ---
-title: "remove .DS_Store files"
+title: "remove `.DS_Store` files"
 classes: wide
 tags:
   - alias
