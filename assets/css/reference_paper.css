@@ -1,0 +1,27 @@
+.reference ul{
+	padding-left: 20px;
+	list-style: none;
+    border:1px solid #DDDDDD;
+	padding-top: 15px;
+	margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	background: #F5F5F5;
+}
+
+.reference li{
+	padding-left: 15px !important;
+    margin-bottom: 15px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+
+.reference li span{
+	display:block;
+}
+
+.title_paper{
+	font-weight: bold;
+}
