@@ -89,7 +89,7 @@ baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "christophe_tav"
 facebook:
   username               :
   app_id                 :
@@ -332,8 +332,8 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
-      share: true
+      comments: true
+      share: false
       related: true
       show_date: true
       enable_copy_code_button: true

@@ -6,6 +6,11 @@ tags:
   - R
   - macOS
   - bash
+  - alias
+  - css
+  - macOS
+  - web development
+  - git
 ---
 
 This is a test
