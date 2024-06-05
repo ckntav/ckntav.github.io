@@ -2,7 +2,7 @@
 layout: tags
 title: notebook
 permalink: /notebook/
-author_profile: true
+author_profile: false
 classes: wide
 add_raccoon: true
 ---
