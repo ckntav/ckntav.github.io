@@ -7,17 +7,17 @@ classes: wide
 wide_title: true
 feature_row_vtqc:
   - image_path: /assets/pics/vtqc_thumbnail_ca_1185.png
-    alt: "placeholder image 2"
+    alt: "thumbnail_vtqc"
     title: "VaccinTrackerQC"
-    excerpt: "Tool designed to track and monitor vaccination campaigns in Quebec during the COVID-19 pandemic. (X/Twitter account)[https://x.com/vaccintrackerqc]"
+    excerpt: "Tool designed to track and monitor vaccination campaigns in Quebec during the COVID-19 pandemic using official government data. The website provided users with up-to-date information, detailed analytics, interactive visualizations, and real-time insights into the progress of vaccination campaigns to support public health efforts and increase public awareness. Updates were posted on our [X/Twitter account](https://x.com/vaccintrackerqc)"
     url: "https://vaccintrackerqc.ca/"
     btn_label: "visit the website"
     btn_class: "btn--primary"
 feature_row_evryrna:
-  - image_path: /assets/pics/insilicobio_logo_large.png
-    alt: "placeholder image 2"
+  - image_path: /assets/pics/evryRNA.jpeg
+    alt: "screenshot_EvryRNA"
     title: "EvryRNA"
-    excerpt: "Platform providing various algorithms and bioinformatics tools developed in the [IBISC laboratory](https://www.ibisc.univ-evry.fr/) (Université Evry Val d'Essonne/Génopole)"
+    excerpt: "Platform providing various algorithms and bioinformatics tools dedicated to the prediction and analysis of non-coding RNAs (ncRNAs) developed in the [IBISC laboratory](https://www.ibisc.univ-evry.fr/) (Université Evry Val d'Essonne/[Génopole](https://www.genopole.fr/))"
     url: "https://evryrna.ibisc.univ-evry.fr/evryrna/"
     btn_label: "visit the website"
     btn_class: "btn--primary"
@@ -25,20 +25,6 @@ feature_row_evryrna:
 
 <h1 id="page-title" class="wide__title">projects</h1>
 
-This webpage is under development and will be available soon.
-Stay tuned!
-{: .notice}
-
 {% include feature_row id="feature_row_vtqc" type="left" %}
 
 {% include feature_row id="feature_row_evryrna" type="right" %}
-
-### VaccinTrackerQC
-Link to VaccinTrackerQC: [website](https://vaccintrackerqc.ca/)
-
-X account: [@vaccintrackerqc](https://x.com/vaccintrackerqc)
-
-### EvryRNA
-Web platform providing various algorithms and bioinformatics tools developed in the laboratory IBISC of UEVE/Genopole.
-
-Link to EvryRNA platform: [website](https://evryrna.ibisc.univ-evry.fr/evryrna/)
