@@ -6,6 +6,8 @@ author_profile: true
 classes: wide
 ---
 
+<h1 id="page-title">projects</h1>
+
 This webpage is under development and will be available soon.
 Stay tuned!
 {: .notice}
