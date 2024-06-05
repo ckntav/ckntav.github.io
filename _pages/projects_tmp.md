@@ -1,7 +1,7 @@
 ---
-layout: splash
+layout: single
 title: projects
-permalink: /projects/
+permalink: /projects_tmp/
 author_profile: true
 classes: wide
 ---
