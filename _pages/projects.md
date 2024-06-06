@@ -17,7 +17,7 @@ feature_row_evryrna:
   - image_path: /assets/pics/evryRNA.jpeg
     alt: "screenshot_EvryRNA"
     title: "EvryRNA"
-    excerpt: "Platform providing various algorithms and bioinformatics tools dedicated to the prediction and analysis of non-coding RNAs (ncRNAs) developed in the [IBISC laboratory](https://www.ibisc.univ-evry.fr/) (Université Evry Val d'Essonne/[Génopole](https://www.genopole.fr/))"
+    excerpt: "Contributed to setting up EvryRNA, a platform providing various algorithms and bioinformatics tools dedicated to the prediction and analysis of non-coding RNAs (ncRNAs) developed in the [IBISC laboratory](https://www.ibisc.univ-evry.fr/) (Université Evry Val d'Essonne/[Génopole](https://www.genopole.fr/))"
     url: "https://evryrna.ibisc.univ-evry.fr/evryrna/"
     btn_label: "visit the website"
     btn_class: "btn--primary"
