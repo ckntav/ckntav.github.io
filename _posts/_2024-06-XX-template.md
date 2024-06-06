@@ -13,4 +13,12 @@ tags:
   - git
 ---
 
-This is a test
+This is a `test`
+
+```bash
+ln -s /path/to/target
+```
+
+```r
+print("great")
+```
