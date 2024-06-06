@@ -16,10 +16,10 @@ In this guide, we’ll walk through the steps required to run FastQC, a quality 
 
 ### Step 1 : prepare your data
 
-Before running FastQC, ensure that your sequencing data files (typically in FASTQ format) are accessible from the compute nodes. You might have these files stored in a directory such as `raw/chipseq_NIH3T3/raw_fastq/PolI_5min_R1.fastq.gz`
+Before running FastQC, ensure that your sequencing data files (typically in FASTQ format) are accessible from the server. You might have these files stored in a directory such as `raw/chipseq_NIH3T3/raw_fastq/PolI_5min_R1.fastq.gz`
 
 ### Step 2 : create a SLURM job script
-Open a blank document and name it  `run_fastqc.sh` 
+Open a blank document, name it  `run_fastqc.sh`, and copy-paste the following code:
 
 ```bash
 #!/bin/sh
@@ -73,7 +73,7 @@ After submitting the job, SLURM will return a job ID. You can use this `<job_id>
 ### Step 5 : monitor the job
 You can check the status of your job using the `squeue` command, which lists all your jobs currently managed by SLURM:
 ``` bash
-squeue -u your_username
+squeue -u <your_username>
 ```
 
 In this case, only one job should appear. The output will show details such as the job ID, job name, partition, and job state. Here are some common job states you might see:

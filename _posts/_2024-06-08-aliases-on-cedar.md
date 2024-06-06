@@ -19,6 +19,9 @@ tags:
   - compute cluster
 ---
 
+Cedar Scheduled Maintenance outage June 4-7 inclusive. status.alliancecan.ca
+Check bak on 8th
+
 This is a `test`
 
 ```bash
