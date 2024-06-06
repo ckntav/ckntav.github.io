@@ -42,7 +42,7 @@ print(merged_df)
 ```
 
 - `by = "ID"`: specifies the common column to merge by.
-- t`ype = "full"`: specifies a full join, meaning all rows from all dataframes are included.
+- `type = "full"`: specifies a full join, meaning all rows from all dataframes are included.
 
 ### Choosing the type of join
 
