@@ -11,12 +11,12 @@ tags:
   - macOS
   - web development
   - git
-  - bash
   - slurm
   - fastqc
   - bioinfo
   - ngs (next-generation sequencing)
   - compute cluster
+  - markdown
 ---
 
 This is a `test`
