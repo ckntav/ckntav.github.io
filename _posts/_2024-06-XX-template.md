@@ -4,6 +4,7 @@ classes: wide
 tags:
   - dataviz
   - R
+  - data wrangling
   - macOS
   - bash
   - alias
