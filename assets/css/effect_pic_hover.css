@@ -1,0 +1,23 @@
+
+.pic_gallery img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.pic_gallery img:hover {
+    opacity: .25;
+}
+
+/*
+.pic_gallery img {
+    width: 300px;
+    height: auto;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.pic_gallery img:hover {
+    width: 350px;
+}
+*/
