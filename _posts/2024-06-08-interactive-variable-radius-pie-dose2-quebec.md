@@ -1,5 +1,5 @@
 ---
-title: "variable radius pie with highcharts"
+title: "interactive variable radius pie with highcharts"
 classes: wide
 tags:
   - dataviz
@@ -14,13 +14,11 @@ tags:
 <div id="htmlwidget-vpie-dose2" style="width:100%;height:500px;" class="highchart html-widget"></div>
 <script src="/assets/js/test-vpie_dose2.js" type="text/javascript"></script>
 
+<br>
+<br>
+<br>
+This chart represents the vaccination coverage per age group (second dose) in Quebec province (as of July 10, 2021).
 
-This is a `test`
+While hovering on one of the slices, more information appears in a box.
 
-```bash
-ln -s /path/to/target
-```
-
-```r
-print("great")
-```
+This visualization is originally displayed here: [https://vaccintrackerqc.ca/lab/](https://vaccintrackerqc.ca/lab/)

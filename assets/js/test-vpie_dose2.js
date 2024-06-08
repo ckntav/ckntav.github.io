@@ -7,11 +7,11 @@ Highcharts.chart('htmlwidget-vpie-dose2', {
         type: 'variablepie',
     },
     title: {
-        text: "Couverture vaccinale par tranches d'âge (2 doses) au Québec",
+        text: "",
         align: "left"
     },
     subtitle: {
-        text: 'En date du 10 juillet 2021',
+        text: '',
         align: "left"
     },
     credits: {
