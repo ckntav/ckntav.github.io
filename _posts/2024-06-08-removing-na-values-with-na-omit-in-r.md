@@ -11,7 +11,7 @@ When working with data in R, you may encounter missing values (NAs) that need to
 ## ## Using `na.omit`
 The `na.omit` function removes all rows from a data frame or matrix that contain at least one NA value. Here's how to use it:
 
-### Example with a Data Frame
+### Example with a data frame
 
 Let's create a sample data frame with some NA values:
 
@@ -51,15 +51,6 @@ Original Data:
 ```
 
 After using `na.omit`, the cleaned data frame excludes these rows:
-```r
-Original Data:
-   A  B  C
-1  1 NA  1
-2  2  2 NA
-3 NA  3  3
-4  4  4  4
-```
-
 ```r
 Cleaned Data:
   A B C
