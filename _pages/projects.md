@@ -2,7 +2,7 @@
 layout: splash
 title: projects
 permalink: /projects/
-author_profile: true
+author_profile: false
 classes: wide
 wide_title: true
 feature_row_vtqc:
@@ -11,7 +11,7 @@ feature_row_vtqc:
     title: "VaccinTrackerQC"
     excerpt: "Tool designed to track and monitor vaccination campaigns in Quebec during the COVID-19 pandemic using official government data. The website provided users with up-to-date information, detailed analytics, interactive visualizations, and real-time insights into the progress of vaccination campaigns to support public health efforts and increase public awareness. Updates were posted on our X/Twitter account: [@vaccintrackerqc](https://x.com/vaccintrackerqc)"
     url: "https://vaccintrackerqc.ca/"
-    btn_label: "visit the website"
+    btn_label: "visit VaccinTrackerQC.ca"
     btn_class: "btn--primary"
 feature_row_evryrna:
   - image_path: /assets/pics/evryRNA.jpeg
@@ -19,7 +19,7 @@ feature_row_evryrna:
     title: "EvryRNA"
     excerpt: "Contributed to setting up EvryRNA, a platform providing various algorithms and bioinformatics tools dedicated to the prediction and analysis of non-coding RNAs (ncRNAs) developed in the [IBISC laboratory](https://www.ibisc.univ-evry.fr/) (Université Evry Val d'Essonne/[Génopole](https://www.genopole.fr/))"
     url: "https://evryrna.ibisc.univ-evry.fr/evryrna/"
-    btn_label: "visit the website"
+    btn_label: "visit EvryRNA.ibisc.univ-evry.fr"
     btn_class: "btn--primary"
 ---
 
