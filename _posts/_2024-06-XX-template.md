@@ -19,6 +19,7 @@ tags:
   - compute cluster
   - markdown
   - prettyprint
+  - html
 ---
 
 This is a `test`
