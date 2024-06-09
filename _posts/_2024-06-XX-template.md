@@ -18,6 +18,7 @@ tags:
   - ngs (next-generation sequencing)
   - compute cluster
   - markdown
+  - prettyprint
 ---
 
 This is a `test`
@@ -29,3 +30,5 @@ ln -s /path/to/target
 ```r
 print("great")
 ```
+
+![heatmap1](/assets/images_post/20240608_heatmap1.png){: .align-center}
