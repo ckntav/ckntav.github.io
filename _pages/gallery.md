@@ -7,12 +7,12 @@ classes: wide
 wide_title: true
 effect_pic_hover: true
 feature_row_1:
-  - image_path: /assets/images_gallery/gallery_blank.png
-    alt: "gallery_blank"
-    url: "https://ckntav.github.io/"
   - image_path: /assets/images_gallery/gallery_variable_radius_pie.png
     alt: "interactive variable radius pie" 
     url : "interactive-variable-radius-pie-dose2-quebec"
+  - image_path: /assets/images_gallery/gallery_bar_chart_race.png
+    alt: "a bar chart race"
+    url: "a-bar-chart-race"
   - image_path: /assets/images_gallery/gallery_blank.png
     alt: "gallery_blank"
     url: "https://ckntav.github.io/"
@@ -43,7 +43,7 @@ feature_row_3:
 This webpage is under development. More visualizations will be available soon.
 {: .notice}
 
-{% include feature_row_gallery.html id="feature_row_2"%}
 {% include feature_row_gallery.html id="feature_row_1"%}
+{% include feature_row_gallery.html id="feature_row_3"%}
 {% include feature_row_gallery.html id="feature_row_2"%}
 {% include feature_row_gallery.html id="feature_row_3"%}

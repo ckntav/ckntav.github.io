@@ -6,6 +6,7 @@ tags:
   - highcharts
   - gallery
   - web development
+  - vtqc
 ---
 
 <script src="/assets/lib_highchart/highcharts-8.1.2/highcharts.js"></script>
