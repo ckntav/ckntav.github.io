@@ -20,6 +20,7 @@ tags:
   - markdown
   - prettyprint
   - html
+  - gallery
 ---
 
 This is a `test`

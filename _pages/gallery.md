@@ -13,9 +13,9 @@ feature_row_1:
   - image_path: /assets/images_gallery/gallery_bar_chart_race.png
     alt: "a bar chart race"
     url: "a-bar-chart-race"
-  - image_path: /assets/images_gallery/gallery_blank.png
-    alt: "gallery_blank"
-    url: "https://ckntav.github.io/"
+  - image_path: /assets/images_gallery/gallery_stunning_boxplots_with_ggplot2.png
+    alt: "stunning boxplots with ggplot2"
+    url: "stunning-boxplots-with-ggplot2"
 feature_row_2:
   - image_path: /assets/images_gallery/gallery_variable_radius_pie.png
     alt: "interactive variable radius pie" 
