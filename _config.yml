@@ -141,7 +141,7 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "x"
+    - label: "twitter/x"
       icon: "fa-brands fa-square-x-twitter"
       url: "https://x.com/christophe_tav"
     - label: "github"
