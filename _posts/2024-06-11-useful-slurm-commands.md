@@ -38,10 +38,6 @@ scontrol show job <job_id>
 ```
 The `<job_id>` can be found in one of the columns in the output of `squeue`.
 
-```bash
-scancel -u <your_username>
-```
-
 ### Job management
 
 #### `scancel`
