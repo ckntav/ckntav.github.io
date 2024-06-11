@@ -1,5 +1,5 @@
 ---
-title: "embed linkedin badges on a webpage"
+title: "embed linkedin badge on a webpage"
 classes: wide
 tags:
   - html
