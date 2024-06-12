@@ -31,3 +31,19 @@ ln -s /path/to/target
 ```r
 print("great")
 ```
+
+# .alias
+alias mugqic='source ~/.mugqic'
+alias sq='squeue -u chris11'
+
+### alias mugqic='module load mugqic/genpipes'
+### alias lsr='ls -lrth'
+### alias report='$MUGQIC_PIPELINES_HOME/utils/log_report.pl'
+
+# .mugqic
+export RAP_ID=def-stbil30
+export JOB_MAIL="christophe.tav@gmail.com"
+export MUGQIC_INSTALL_HOME=/cvmfs/soft.mugqic/CentOS6
+module use $MUGQIC_INSTALL_HOME/modulefiles
+# module load mugqic/python
+module load mugqic/genpipes
