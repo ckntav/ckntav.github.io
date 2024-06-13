@@ -1,5 +1,5 @@
 ---
-title: "stunning boxplots with ggplot2"
+title: "stunning boxplots with `ggplot2`"
 classes: wide
 tags:
   - dataviz
