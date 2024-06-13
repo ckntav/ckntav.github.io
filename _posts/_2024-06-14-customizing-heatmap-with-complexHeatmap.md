@@ -7,19 +7,28 @@ tags:
   - gallery
 ---
 
-This is a `test`
+In this post, we will explore two features to customize heatmaps:
+- customize the border of the heatmap cell
+- display text inside each cell
 
-```bash
-ln -s /path/to/target
-```
+### rect_gp
+The `rect_gp` parameter customizes the borders of the heatmap cells, setting the color to white and the line width to 2.
 
 ```r
-print("great")
+rect_gp = gpar(col = "white", lwd = 2),
+```
+
+### cell fun
+The `cell_fun` parameter allows for custom text inside each cell, displaying the value as a percentage with two decimal places.
+```r
+cell_fun = function(j, i, x, y, width, height, fill) {
+          grid.text(sprintf("%.2f %%", data_matrix[i, j]), x, y, gp = gpar(fontsize = 8, col = "black"))
+        }
 ```
 
 ![custom_heatmap](/assets/images_post/20240614_custom_heatmap.png){: .align-center}
 
-Code to generate this heatmap
+Code to generate this heatmap:
 ```r
 # Load the libraries
 library(ComplexHeatmap)
