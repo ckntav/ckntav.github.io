@@ -34,7 +34,7 @@ ref_paper: true
 
 <div class="reference">
 <ul>
-	<li><img src="/assets/images_papers/2023_Postic_NucleicAcidsResearch.jpeg" alt="2023_Postic_NucleicAcidsResearch">
+	<li><img src="/assets/images_papers/2023_Postic_NucleicAcidsResearch.png" alt="2023_Postic_NucleicAcidsResearch">
 		<div><span>G. Postic, C. Tav, L. Platon, F. Zehraoui, F. Tahi.</span> <span class="title_paper">IRSOM2: a web server for predicting bifunctional RNAs.</span> <span><i>Nucleic Acids Research</i>. 2023. <a class="doi" href="https://doi.org/10.1093/nar/gkad381" target="_blank">doi:10.1093/nar/gkad381</a></span></div></li>
 </ul>
 </div>
