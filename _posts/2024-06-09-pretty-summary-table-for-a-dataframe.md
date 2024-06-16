@@ -5,6 +5,7 @@ tags:
   - dataviz
   - R
   - prettyprint
+  - gallery
 ---
 
 The `gtExtras` R package helps create beautiful data tables. One useful function is `gt_plt_summary`, which generates a summary plot for a dataFrame.
