@@ -5,6 +5,7 @@ tags:
   - dataviz
   - R
   - gallery
+  - color
 ---
 
 Choosing the right color palette is essential for effective and accessible data visualizations. The `viridisLite` package in R offers several color palettes: `viridis`, `magma`, `plasma`, `inferno`, `cividis`, `rocket`, `mako`, `turbo`.

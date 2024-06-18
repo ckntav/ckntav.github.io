@@ -21,7 +21,6 @@ tags:
   - prettyprint
   - html
   - gallery
-  - color
 ---
 
 This is a `test`
