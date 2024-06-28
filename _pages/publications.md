@@ -11,7 +11,7 @@ ref_paper: true
 <div class="reference">
   <ul>
     <li>
-        <img src="/assets/images_papers/2024_Sibai_JournalOfCellularPhysiology.png" alt="2024_Sibai_JournalOfCellularPhysiology">
+        <img src="/assets/images_papers/manuscript_in_preparation.png" alt="manuscript_in_preparation">
       <div>
         <span>XXX, XXX, XXX, <u>C. Tav</u>, XXX, XXX, XXX.</span>
         <span class="title_paper">XXX.</span>
