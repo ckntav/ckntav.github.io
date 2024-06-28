@@ -7,6 +7,20 @@ author_profile: true
 ref_paper: true
 ---
 
+### in preparation
+<div class="reference">
+  <ul>
+    <li>
+        <img src="/assets/images_papers/2024_Sibai_JournalOfCellularPhysiology.png" alt="2024_Sibai_JournalOfCellularPhysiology">
+      <div>
+        <span>XXX, XXX, XXX, <u>C. Tav</u>, XXX, XXX, XXX.</span>
+        <span class="title_paper">XXX.</span>
+        <span><i></i><a class="doi" href="" target="_blank"></a></span>
+      </div>
+    </li>
+  </ul>
+</div>
+
 ### 2024
 
 <div class="reference">
