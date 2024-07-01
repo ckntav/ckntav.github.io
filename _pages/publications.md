@@ -13,8 +13,8 @@ ref_paper: true
     <li>
         <img src="/assets/images_papers/manuscript_in_preparation.png" alt="manuscript_in_preparation">
       <div>
-        <span>XXX, XXX, XXX, <u>C. Tav</u>, XXX, XXX, XXX.</span>
-        <span class="title_paper">XXX.</span>
+        <span>D. Sudarshan, C. Joly-Beauparlant, S. Bianco, <u>C. Tav</u>, E. Gregoire, N. Alerasool, L. Hermann, C. Lachance, K. Xu, S. Bilodeau, J.-P. Lambert, M.Q. Bernardini, M. Rouzbahman, A. Droit, M. Taipale, J. Côté.</span>
+        <span class="title_paper">.</span>
         <span><i></i><a class="doi" href="" target="_blank"></a></span>
       </div>
     </li>
