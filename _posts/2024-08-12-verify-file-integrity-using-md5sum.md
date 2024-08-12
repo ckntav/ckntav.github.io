@@ -13,15 +13,16 @@ An MD5 checksum is a 128-bit hash that serves as a fingerprint for a file. If th
 
 ### how to use md5sum `-c`?
 
-1. obtain the md5 checksum file:
+- obtain the md5 checksum file:
 The checksum file typically looks like this:
 
 ```bash
 d41d8cd98f00b204e9800998ecf8427e  filename.txt
 ```
 
-2. verify the file:
+- verify the file:
 Place the checksum file in the same directory as the files to verify, and run:
+
 ```bash
 md5sum -c file_md5
 ```
@@ -31,4 +32,4 @@ If the file is intact, you’ll see:
 filename.txt: OK
 ```
 
-If a file fails the check, it will be marked as “FAILED.”
+If a file fails the check, it will be marked as “FAILED”
