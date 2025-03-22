@@ -18,5 +18,5 @@ main:
     url: /gallery/
   - title: "notebook"
     url: /notebook/
-  # - title: "cv"
-  #  url: /cv/
+  - title: "cv"
+    url: /cv/
