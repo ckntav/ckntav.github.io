@@ -89,7 +89,7 @@ if (heroStats) heroObserver.observe(heroStats);
 
     let W, H, phase = 0;
 
-    const SPEED      = 0.007;
+    const SPEED      = 0.013;
     const WAVELENGTH = 320;
     const AMPLITUDE  = 80;
     const RUNG_STEP  = 22;
@@ -152,8 +152,9 @@ if (heroStats) heroObserver.observe(heroStats);
 
     // ---- Magnifying glass ----
     const ATCG_CHARS = ['A', 'T', 'C', 'G'];
-    const MAG_SEQ_LEN = 22; // 2 rows × 11
+    const MAG_SEQ_LEN = 11; // top strand only — bottom is always the complement
     let magSeq = Array.from({length: MAG_SEQ_LEN}, () => ATCG_CHARS[Math.floor(Math.random() * 4)]);
+    function complement(b) { return b==='A'?'T' : b==='T'?'A' : b==='C'?'G' : 'C'; }
     let magAlpha = 0, magTargetAlpha = 0, magFrame = 0;
 
     function drawMagnifier(mx, my, alpha) {
@@ -164,10 +165,10 @@ if (heroStats) heroObserver.observe(heroStats);
         const RADIUS = 8; // border radius
 
         ctx.save();
-        ctx.font = '600 9px "JetBrains Mono","Courier New",monospace';
+        ctx.font = '600 12px "JetBrains Mono","Courier New",monospace';
 
-        // Measure width from a sample row
-        const sampleW = ctx.measureText(magSeq.slice(0, ROW_LEN).join(' ')).width;
+        // Measure width from the top strand
+        const sampleW = ctx.measureText(magSeq.join(' ')).width;
         const bw = sampleW + PAD_X * 2;
         const bh = ROWS * LINE_H + PAD_Y * 2;
 
@@ -193,13 +194,14 @@ if (heroStats) heroObserver.observe(heroStats);
         ctx.lineWidth = 1;
         ctx.stroke();
 
-        // ATCG sequence text — 2 rows of 10
+        // ATCG sequence — row 0: top strand, row 1: Watson-Crick complement
         ctx.textAlign = 'left';
         ctx.textBaseline = 'middle';
+        const rows = [magSeq, magSeq.map(complement)];
         for (let r = 0; r < ROWS; r++) {
             ctx.fillStyle = `rgba(${textCol},${(alpha * (0.88 - r * 0.1)).toFixed(3)})`;
             ctx.fillText(
-                magSeq.slice(r * ROW_LEN, (r + 1) * ROW_LEN).join(' '),
+                rows[r].join(' '),
                 ox + PAD_X,
                 oy + PAD_Y + r * LINE_H + LINE_H / 2
             );
@@ -532,8 +534,8 @@ if (heroStats) heroObserver.observe(heroStats);
         for (const h of helices) {
             // Travel animation: shine near button, then glide to destination
             if (h.traveling) {
-                h.travelT = Math.min(1, h.travelT + 0.018);
-                const SHINE_END = 0.28;
+                h.travelT = Math.min(1, h.travelT + 0.009);
+                const SHINE_END = 0.11;
                 if (h.travelT <= SHINE_END) {
                     // Shine phase: stay at button, big and glowing
                     const sp = h.travelT / SHINE_END; // 0 → 1
@@ -587,7 +589,7 @@ if (heroStats) heroObserver.observe(heroStats);
             }
 
             // Tick mutation animation
-            if (h.mutating > 0) h.mutating = Math.max(0, h.mutating - 0.020);
+            if (h.mutating > 0) h.mutating = Math.max(0, h.mutating - 0.032);
 
             // Normal movement
             h.x += h.vx;
