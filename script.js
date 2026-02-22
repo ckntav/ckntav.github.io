@@ -100,9 +100,9 @@ if (heroStats) heroObserver.observe(heroStats);
     const BASES = ['A–T', 'T–A', 'C–G', 'G–C'];
 
     function isDark() { return document.documentElement.classList.contains('dark'); }
-    function COL1()     { return isDark() ? [180, 180, 180] : [70, 70, 70]; }
-    function COL2()     { return isDark() ? [130, 130, 130] : [120, 120, 120]; }
-    function COL_RUNG() { return isDark() ? [150, 150, 150] : [100, 100, 100]; }
+    function COL1()     { return isDark() ? [100, 140, 255] : [70, 70, 70]; }
+    function COL2()     { return isDark() ? [60,  90,  255] : [120, 120, 120]; }
+    function COL_RUNG() { return isDark() ? [80,  120, 255] : [100, 100, 100]; }
 
     // Scroll-based unwind amount (0 = normal, 1 = fully unwound)
     let unwind = 0;
@@ -178,9 +178,9 @@ if (heroStats) heroObserver.observe(heroStats);
         oy = Math.max(4, Math.min(H - bh - 4, oy));
 
         const dk = isDark();
-        const borderCol = dk ? '155,155,155' : '100,100,100';
-        const bgCol     = dk ? '14,14,14'    : '248,248,248';
-        const textCol   = dk ? '195,195,195' : '45,45,45';
+        const borderCol = dk ? '80,120,255'  : '100,100,100';
+        const bgCol     = dk ? '5,8,20'      : '248,248,248';
+        const textCol   = dk ? '120,160,255' : '45,45,45';
 
         // Rounded rectangle background
         ctx.beginPath();
@@ -377,6 +377,7 @@ if (heroStats) heroObserver.observe(heroStats);
             amp:   rnd(6, 10),
             alpha: rnd(0.12, 0.28),
             rungs: Math.floor(rnd(3, 6)),
+            colorIdx: Math.floor(Math.random() * 3),
             mutating: 0,
             traveling,
             travelT: 0,
@@ -447,12 +448,12 @@ if (heroStats) heroObserver.observe(heroStats);
         const shine = h.shineAlpha || 0;
         if (shine > 0) {
             ctx.shadowBlur = 35 * shine;
-            ctx.shadowColor = `rgba(200, 230, 255, ${(shine * 1.0).toFixed(3)})`;
+            ctx.shadowColor = `rgba(80, 130, 255, ${(shine * 1.0).toFixed(3)})`;
         }
 
         const m = h.mutating;  // 1→0 mutation progress
         // During mutation: scale pulse, extra amplitude wobble, glow
-        const scale = 1 + m * 0.3 * Math.sin(m * Math.PI * 3);
+        const scale = 1 + m * 0.9 * Math.sin(m * Math.PI * 3);
         if (m > 0) ctx.scale(scale, scale);
 
         const ampMod = m > 0 ? h.amp * (1 + m * 0.5 * Math.sin(m * 20)) : h.amp;
@@ -460,34 +461,36 @@ if (heroStats) heroObserver.observe(heroStats);
         const stepH = h.len / steps;
         const k     = (2 * Math.PI) / h.len;
 
-        // Glow ring during mutation
-        if (m > 0.1) {
-            const glowR = h.len * 0.5 + 10;
-            ctx.beginPath();
-            ctx.arc(0, 0, glowR, 0, Math.PI * 2);
-            ctx.strokeStyle = `rgba(80,80,80,${(m * 0.3).toFixed(3)})`;
-            ctx.lineWidth = 1.5;
-            ctx.stroke();
-        }
+        // Dark mode: jellyfish colour palette — cyan / blue / purple variants
+        const dk = document.documentElement.classList.contains('dark');
+        const JELLY_BLUE = { s0: [100, 140, 255], s1: [60, 90, 255], rung: [80, 120, 255], dot: [120, 160, 255], glow: 'rgba(80,120,255,0.65)' };
+        const jpal = dk ? JELLY_BLUE : null;
+        const alphaBoost = dk ? 2.2 : 1.0;
+
+        // (no glow ring on mutation)
 
         // Draw two strands
         ctx.lineWidth = 1.2;
-        const dk = document.documentElement.classList.contains('dark');
+        if (dk && jpal) {
+            ctx.shadowBlur = 14 + m * 40;
+            ctx.shadowColor = jpal.glow;
+        }
         for (let strand = 0; strand < 2; strand++) {
             const offset = strand * Math.PI;
-            const grey   = strand === 0 ? (dk ? 190 : 80) : (dk ? 150 : 130);
+            const col = dk ? (strand === 0 ? jpal.s0 : jpal.s1)
+                           : (strand === 0 ? [80, 80, 80] : [130, 130, 130]);
             ctx.beginPath();
             for (let i = 0; i <= steps; i++) {
                 const yy    = -h.len / 2 + i * stepH;
                 const depth = Math.sin(k * (yy + h.len / 2) + h.phase + offset);
                 const xx    = ampMod * depth;
-                const a     = h.alpha * (0.5 + 0.5 * Math.abs(depth)) + m * 0.2;
+                const a     = h.alpha * alphaBoost * (0.5 + 0.5 * Math.abs(depth)) + m * 0.5;
                 if (i === 0) {
                     ctx.moveTo(xx, yy);
                 } else {
                     ctx.lineTo(xx, yy);
                 }
-                ctx.strokeStyle = `rgba(${grey},${grey},${grey},${Math.min(1, a).toFixed(3)})`;
+                ctx.strokeStyle = `rgba(${col[0]},${col[1]},${col[2]},${Math.min(1, a).toFixed(3)})`;
             }
             ctx.stroke();
         }
@@ -500,18 +503,18 @@ if (heroStats) heroObserver.observe(heroStats);
             const depth = Math.sin(k * (yy + h.len / 2) + h.phase);
             const x1    = ampMod * depth;
             const x2    = ampMod * Math.sin(k * (yy + h.len / 2) + h.phase + Math.PI);
-            const a     = h.alpha * 0.6 + m * 0.15;
-            const rGrey = dk ? 160 : 110;
-            ctx.strokeStyle = `rgba(${rGrey},${rGrey},${rGrey},${Math.min(1, a).toFixed(3)})`;
+            const a     = h.alpha * alphaBoost * 0.6 + m * 0.15;
+            const rc = dk ? jpal.rung : [110, 110, 110];
+            ctx.strokeStyle = `rgba(${rc[0]},${rc[1]},${rc[2]},${Math.min(1, a).toFixed(3)})`;
             ctx.beginPath();
             ctx.moveTo(x1, yy);
             ctx.lineTo(x2, yy);
             ctx.stroke();
 
             // Tiny dots at rung endpoints
-            const dotR = 1.2 + Math.abs(depth) * 0.6 + m * 1.5;
-            const dGrey = dk ? 170 : 100;
-            ctx.fillStyle = `rgba(${dGrey},${dGrey},${dGrey},${Math.min(1, a + 0.05).toFixed(3)})`;
+            const dotR = 1.2 + Math.abs(depth) * 0.6;
+            const dc = dk ? jpal.dot : [100, 100, 100];
+            ctx.fillStyle = `rgba(${dc[0]},${dc[1]},${dc[2]},${Math.min(1, a + 0.05).toFixed(3)})`;
             ctx.beginPath();
             ctx.arc(x1, yy, dotR, 0, Math.PI * 2);
             ctx.fill();
@@ -529,7 +532,7 @@ if (heroStats) heroObserver.observe(heroStats);
         for (const h of helices) {
             // Travel animation: shine near button, then glide to destination
             if (h.traveling) {
-                h.travelT = Math.min(1, h.travelT + 0.004);
+                h.travelT = Math.min(1, h.travelT + 0.018);
                 const SHINE_END = 0.28;
                 if (h.travelT <= SHINE_END) {
                     // Shine phase: stay at button, big and glowing
@@ -584,7 +587,7 @@ if (heroStats) heroObserver.observe(heroStats);
             }
 
             // Tick mutation animation
-            if (h.mutating > 0) h.mutating = Math.max(0, h.mutating - 0.012);
+            if (h.mutating > 0) h.mutating = Math.max(0, h.mutating - 0.020);
 
             // Normal movement
             h.x += h.vx;
