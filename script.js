@@ -646,6 +646,14 @@ if (heroStats) heroObserver.observe(heroStats);
         const isDark = document.documentElement.classList.contains('dark');
         localStorage.setItem('theme', isDark ? 'dark' : 'light');
     });
+
+    // Pulse hint on every visit
+    setTimeout(() => {
+        btn.classList.add('pulse-hint');
+        btn.addEventListener('animationend', () => {
+            btn.classList.remove('pulse-hint');
+        }, { once: true });
+    }, 1800);
 })();
 
 // ========================================

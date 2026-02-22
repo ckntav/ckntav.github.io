@@ -387,12 +387,23 @@ html.dark .dna-spawn-btn:hover {
     width: 36px;
     height: 36px;
     border-radius: 8px;
-    border: 1.5px solid var(--border);
+    border: none;
     background: var(--bg);
     color: var(--text-muted);
     cursor: pointer;
     transition: var(--transition);
     padding: 0;
+}
+
+@keyframes pulse-glow {
+    0%   { transform: scale(1);    filter: drop-shadow(0 0 0px rgba(120, 120, 120, 0)); }
+    40%  { transform: scale(1.45); filter: drop-shadow(0 0 8px rgba(180, 180, 180, 0.95)) drop-shadow(0 0 18px rgba(120, 120, 120, 0.5)); }
+    100% { transform: scale(1);    filter: drop-shadow(0 0 0px rgba(120, 120, 120, 0)); }
+}
+
+.theme-toggle.pulse-hint .icon-moon {
+    animation: pulse-glow 1.2s ease-in-out 3;
+    transform-origin: center;
 }
 
 .theme-toggle svg {
@@ -847,6 +858,7 @@ html.dark .footer-links a:hover { background: #1a1a1a; border-color: #404040; }
     margin: 0;
     line-height: 1.5;
 }
+
 
 .about-expertise {
     display: flex;
