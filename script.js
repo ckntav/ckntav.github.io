@@ -100,9 +100,9 @@ if (heroStats) heroObserver.observe(heroStats);
     const BASES = ['A–T', 'T–A', 'C–G', 'G–C'];
 
     function isDark() { return document.documentElement.classList.contains('dark'); }
-    function COL1()     { return isDark() ? [100, 140, 255] : [70, 70, 70]; }
-    function COL2()     { return isDark() ? [60,  90,  255] : [120, 120, 120]; }
-    function COL_RUNG() { return isDark() ? [80,  120, 255] : [100, 100, 100]; }
+    function COL1()     { return isDark() ? [100, 140, 255] : [35, 35, 35]; }
+    function COL2()     { return isDark() ? [60,  90,  255] : [80, 80, 80]; }
+    function COL_RUNG() { return isDark() ? [80,  120, 255] : [55, 55, 55]; }
 
     // Scroll-based unwind amount (0 = normal, 1 = fully unwound)
     let unwind = 0;
@@ -467,20 +467,20 @@ if (heroStats) heroObserver.observe(heroStats);
         const dk = document.documentElement.classList.contains('dark');
         const JELLY_BLUE = { s0: [100, 140, 255], s1: [60, 90, 255], rung: [80, 120, 255], dot: [120, 160, 255], glow: 'rgba(80,120,255,0.65)' };
         const jpal = dk ? JELLY_BLUE : null;
-        const alphaBoost = dk ? 2.2 : 1.0;
+        const alphaBoost = dk ? 2.2 : 1.6;
 
         // (no glow ring on mutation)
 
         // Draw two strands
         ctx.lineWidth = 1.2;
-        if (dk && jpal) {
+        if (dk && jpal && m > 0) {
             ctx.shadowBlur = 14 + m * 40;
             ctx.shadowColor = jpal.glow;
         }
         for (let strand = 0; strand < 2; strand++) {
             const offset = strand * Math.PI;
             const col = dk ? (strand === 0 ? jpal.s0 : jpal.s1)
-                           : (strand === 0 ? [80, 80, 80] : [130, 130, 130]);
+                           : (strand === 0 ? [35, 35, 35] : [80, 80, 80]);
             ctx.beginPath();
             for (let i = 0; i <= steps; i++) {
                 const yy    = -h.len / 2 + i * stepH;
@@ -506,7 +506,7 @@ if (heroStats) heroObserver.observe(heroStats);
             const x1    = ampMod * depth;
             const x2    = ampMod * Math.sin(k * (yy + h.len / 2) + h.phase + Math.PI);
             const a     = h.alpha * alphaBoost * 0.6 + m * 0.15;
-            const rc = dk ? jpal.rung : [110, 110, 110];
+            const rc = dk ? jpal.rung : [55, 55, 55];
             ctx.strokeStyle = `rgba(${rc[0]},${rc[1]},${rc[2]},${Math.min(1, a).toFixed(3)})`;
             ctx.beginPath();
             ctx.moveTo(x1, yy);
@@ -515,7 +515,7 @@ if (heroStats) heroObserver.observe(heroStats);
 
             // Tiny dots at rung endpoints
             const dotR = 1.2 + Math.abs(depth) * 0.6;
-            const dc = dk ? jpal.dot : [100, 100, 100];
+            const dc = dk ? jpal.dot : [55, 55, 55];
             ctx.fillStyle = `rgba(${dc[0]},${dc[1]},${dc[2]},${Math.min(1, a + 0.05).toFixed(3)})`;
             ctx.beginPath();
             ctx.arc(x1, yy, dotR, 0, Math.PI * 2);
