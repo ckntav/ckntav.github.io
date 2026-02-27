@@ -258,6 +258,7 @@ html.dark .navbar.scrolled {
     background: rgba(10, 10, 10, 0.85);
 }
 
+
 .nav-container {
     max-width: 1120px;
     margin: 0 auto;
@@ -393,6 +394,8 @@ html.dark .dna-spawn-btn:hover {
     cursor: pointer;
     transition: var(--transition);
     padding: 0;
+    position: relative;
+    overflow: visible;
 }
 
 @keyframes pulse-glow {

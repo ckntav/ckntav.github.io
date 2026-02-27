@@ -347,8 +347,8 @@ if (heroStats) heroObserver.observe(heroStats);
     function inExclusionZone(x, y) {
         const cx = W / 2;
         const cy = H / 2;
-        const halfW = W * 0.35;
-        const halfH = H * 0.35;
+        const halfW = W * 0.22;
+        const halfH = H * 0.22;
         return Math.abs(x - cx) < halfW && Math.abs(y - cy) < halfH;
     }
 
